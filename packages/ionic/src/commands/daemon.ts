@@ -131,7 +131,7 @@ export class DaemonCommand extends Command {
       await this.env.daemon.save();
     };
 
-    registerShutdownFunction(this.env, () => {
+    registerShutdownFunction(() => {
       const fs = require('fs');
 
       try {
